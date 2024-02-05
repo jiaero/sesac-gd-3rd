@@ -7,6 +7,11 @@ span {
     background-color: red;
 }
 
+li {
+    background-color: cadetblue;
+}
+
+/* id와 class 선택자 중에서 id 선택자의 우선순위가 더 높다 */
 #first {
     background-color: blue;
 }
@@ -14,3 +19,5 @@ span {
 .second {
     background-color: green;
 }
+
+/* 우선순위 : id 선택자 > class 선택자 > 태그 선택자 순으로 우선순위를 가짐 */
