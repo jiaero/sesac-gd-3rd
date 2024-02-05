@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 가상요소 선택자와 가상 클래스 선택자</title>
+    <!-- 가상 클래스 선택자 -> :hover, :active, :focus -->
+    <style>
+        * {
+            margin: 0;
+        }
+        .div1 {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: skyblue;
+        }
+
+        /* 가상 클래스 선택자 */
+        /* :hover, active, visitied, focus */
+        /* 
+        - E:hover { } -> E(element) 요소에 마우스가 올라가 있는 동안 E를 선택
+        - E:active { } -> E 요소에 마우스 클릭 또는 키보드 엔터가 눌린 동안 E를 선택
+        - E:focus { } -> E 요소에 포커스가 머물러 있는 동안 E를 선택 (주로 input에서 사용)
+        - E:visited { } -> E 요소가 링크일 때, 한번 클릭해서 해당 링크에 들어갔다가 나왔을 때
+        - E:checked { } -> E 요소에 체크가 되었을 때(input의 타입이 radio나 checkbox인 경우)
+        */
+
+        /* hover */
+        .div1:hover {
+            background-color: rgb(107, 215, 179);
+            height: 150px;
+        }
+
+        /* active -> 클릭한 순간 */
+        .div1:active {
+            background-color: pink;
+            width: 150px;
+        }
+
+        /* focus */
+        input:focus {
+            background-color: cornflowerblue;
+            width: 150px;
+            outline-color: blueviolet;
+        }
+
+        /* visited */
+        .links > a:active {
+            color: green;
+            font-size: 25px;
+            font-weight: 900;
+            background-color: darksalmon;
+        }
+
+        .links > a:visited {
+            color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <span>div1</span>
+    </div>
+
+    <input type="text" />
+    <div class="links">
+        <a href="https://www.naver.com" target="_blank">네이버</a>
+        <a href="https://www.google.co.kr" target="_blank">구글</a>
+    </div>
+</body>
+</html>
