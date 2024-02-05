@@ -23,6 +23,33 @@
             margin-bottom: 20px;
         }
 
+
+        .stripes > * {
+            background-color: navy;
+            color: white;
+        }
+
+        .stripes > div:nth-child(2n) {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* nth-child(2n+4) -> 4번째 부터 2의 배수 숫자들이 선택 됨 */
+        
+        h2 {
+            color: rgb(163, 197, 235);
+        }
+
+        .box::before {
+            content: "택시";
+            color: blue;
+        }
+
+        .box::after {
+            content: "빨리";
+            color: pink;
+        }
+
     </style>
 </head>
 <body>
@@ -31,5 +58,21 @@
     <div class="links">
         <a href="https://www.naver.com" target="_blank">네이버로 이동하기</a>
     </div>
+
+    <div class="stripes">
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+    </div>
+
+    <h2>가상 요소 선택자 연습</h2>
+    <div class="box">여기요!</div>
 </body>
 </html>
