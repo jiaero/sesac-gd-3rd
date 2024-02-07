@@ -1,0 +1,48 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
+
+table {
+  padding: 10px;
+}
+
+.month {
+  color: 2f2f2f;
+  padding-left: 23px;
+  font-size: 53px;
+  font-weight: 700;
+}
+
+.year {
+  color: #2f2f2f;
+  padding-left: 180px;
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: top;
+}
+
+.holiday {
+  color: #18793f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.holiday1 {
+  color: #9a3d92;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.day {
+  color: rgb(155, 155, 155);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.line {
+  border-top: 1px solid #818181;
+}
