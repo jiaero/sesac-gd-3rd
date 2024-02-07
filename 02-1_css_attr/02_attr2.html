@@ -1,17 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>font 속성</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글자 관련 css 속성</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./02_attr2.css" />
+  </head>
+  <body>
+    <h2 class="noonu">구글 폰트 적용</h2>
+    <div class="google">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+      accusantium<br />
+      aperiam hic quasi quod consequuntur nemo, optio deleniti facilis?<br />
+      Veritatis vero architecto facere assumenda distinctio non at
+      laboriosam,<br />
+      fugit voluptatibus!
+    </div>
+
+    <div class="container">
+      <p class="sentence">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sunt<br />
+        quam velit nihil iste atque harum voluptatum rem ducimus et quae,<br />
+        asperiores laboriosam eligendi voluptatibus ab libero consequatur<br />
+        praesentium qui.
+      </p>
+      <div class="ling-height">aaaaa</div>
+      <div class="ling-height">aaaaa</div>
+      <div class="ling-height">aaaaa</div>
+    </div>
+    <br />
+    <hr />
+
+    <h2>opacity</h2>
+
+    <div class="opacity opacity-20">opacity 0.2</div>
+    <div class="opacity opacity-80">opacity 0.8</div>
+    <div class="opacity opacity-1">opacity 1</div>
+
+    <h2>요소를 숨기는 방법</h2>
+    <div class="square">original</div>
+    <div class="square d-none">d-none</div>
+    <div class="square invisible">invisible</div>
+    <div class="square opacity-0">opacity-0</div>
+    <div class="square">original</div>
+    <br />
+    <hr />
+
+    <h2>overflow</h2>
+    <div class="text-container overflow-hidden">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, id.
+        Neque repudiandae deserunt accusantium alias ipsa enim minima facilis
+        quidem incidunt error officiis adipisci unde, quis illum harum quos
+        laudantium.
+      </p>
+      <img src="./img/pooh.png" alt="pooh" />
+    </div>
+    <div class="text-container overflow-auto">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, id.
+        Neque repudiandae deserunt accusantium alias ipsa enim minima facilis
+        quidem incidunt error officiis adipisci unde, quis illum harum quos
+        laudantium.
+      </p>
+      <img src="./img/pooh.png" alt="pooh" />
+    </div>
+    <div class="text-container overflow-scroll">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, id.
+        Neque repudiandae deserunt accusantium alias ipsa enim minima facilis
+        quidem incidunt error officiis adipisci unde, quis illum harum quos
+        laudantium.
+      </p>
+      <img src="./img/pooh.png" alt="pooh" />
+    </div>
+    <div class="text-container overflow-visible">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, id.
+        Neque repudiandae deserunt accusantium alias ipsa enim minima facilis
+        quidem incidunt error officiis adipisci unde, quis illum harum quos
+        laudantium.
+      </p>
+      <img src="./img/pooh.png" alt="pooh" />
+    </div>
+  </body>
 </html>
