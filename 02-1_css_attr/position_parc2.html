@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position2</title>
+    <style>
+      body {
+        height: 2000px;
+        margin: 0 auto;
+        background-color: #252525;
+      }
+      .product-info {
+        background-color: #f5f4e9;
+        height: 300px;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 20px;
+      }
+
+      .fixed-tab {
+        text-align: center;
+        height: 1000px;
+        background-color: #ebe9de;
+      }
+      ul {
+        text-align: center;
+        margin: 0;
+        top: 0;
+        position: sticky;
+        height: 70px;
+        background-color: #a4a4a4;
+      }
+      li {
+        padding-top: 25px;
+        background-color: #a4a4a4;
+        display: inline-block;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        padding: 0 20px;
+      }
+
+      .top-btn {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid rgb(208, 208, 208);
+        background-color: rgb(242, 242, 242);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="product-info">position prac</section>
+      <section class="product-info-detail">
+        <div class="fixed-tab">
+          <ul>
+            <li><a href="#">상품정보</a></li>
+            <li><a href="#">혜택/구매정보</a></li>
+            <li><a href="#">고객리뷰/Q&A</a></li>
+            <li><a href="#">추천 상품</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <a href="#" class="top-btn">top</a>
+  </body>
+</html>
