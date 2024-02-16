@@ -1,0 +1,112 @@
+.container {
+  /* flex 기본 용어 */
+  /* 주측: main axis */
+  /* 교차측 : cross-axis */
+
+  /* display: flex; -> 자식 요소의 정렬 방법을 지정하는 속성 */
+  /* display: inline-flex; 속성도 있음 */
+  /* flex 와 inline-flex의 차이 */
+  /* flex는 부모 요소가 수직으로 쌓임 block 요소처럼 */
+  /* inline-flex는 부모 요소가 수평으로 쌓임 inline 요소처럼 */
+
+  /* display: flex;는 기본적으로 자식 요소들이 왼쪽에서 오른쪽으로 쌓임 */
+  /* 즉, 주축의 기본 방향이 좌 -> 우 */
+  display: flex;
+  width: 100vw;
+  background-color: antiquewhite;
+
+  /* flex-direction: 주축의 방향 지정 */
+  /* flex-direction: row; (default) */
+  /* row-reverse: 우 -> 좌 로 자식 요소들이 쌓임 */
+  /* flex-direction: row-reverse; */
+
+  /* flex-direction: column; 위 -> 아래로 자식요소들이 쌓임 */
+  /* flex-direction: column; */
+
+  /* flex-direction: column-reverse; 아래 -> 위로 자식요소들이 쌓임 */
+  /* flex-direction: column-reverse; */
+
+  /* flex-direction: row; */
+  /* width: 350px; */
+
+  /* flex 속성 사용 시 컨테이너의 줄바꿈을 지정 */
+  /* flex-wrap: no-wrap; (default) */
+  /* flex-wrap: wrap; */
+
+  /* flex-wrap: wrap-reverse; -> 아래부터 쌓인다. */
+  /* flex-wrap: wrap-reverse; */
+
+  /* flex-direction: column-reverse; */
+
+  /* flex-direction: row;
+  height: 300px;
+  width: 350px;
+
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse; */
+
+  /* justify-content 주축 item의 정렬(배치) 방법 */
+  /* 
+    - justify-content: flex-start (default) -> item을 start 지점을 기준으로 나열
+    - justify-content: flex-end -> 아이템을 end 지점을 기준으로 나열
+    - justify-content: space-around -> 아이템들의 모든 여백을 동일하게 갖도록 함 ( 양 끝 여백의 단위가 1이라면, 아이템 사이의 여백들은 2)
+    - justify-content: space-evenly -> start부터 첫 아이템의 간격, 아이템 사이 간격, 마지막 아이템부터 end 까지의 모든 간격이 동일
+    - justify-content: space-between -> 처음과 마지막 아이템을 양 끝에 붙이고, 나머지 아이템 사이 간격을 동일하게 나눔
+  */
+  /* justify-content: space-between; */
+
+  /* justify-content: space-evenly; */
+
+  /* flex-direction: column;
+  height: 350px;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+
+  /* align-items : 교차축을 기준으로 item을 어떻게 배치할 것인가 */
+  /* 
+  - align-items: stretch; (default) -> container의 교차축을 모두 채우기 위해 늘림
+    -> item의 높이 or 너비가 지정되지 않았을 때 자동으로 교차축을 채우기 위해 늘어남
+  - align-items: flex-start; -> 교차축의 시작점으로 정렬
+    -> item의 높이 or 너비가 지정되었을 때 자동으로 정렬됨
+  - align-items: flex-end; -> 교차축의 끝점으로 정렬
+  - align-items: center; -> 교차축의 중앙에 정렬
+  - align-items: baseline; -> item을 텍스트의 베이스라인(글자의 가장 밑 줄) 기준으로 정렬
+  */
+  height: 300px;
+  /* align-items: flex-end;
+  align-items: center;
+  align-items: baseline; */
+
+  /* align-content -> 두줄 이상에서 교차축 기준으로 아이템들의 정렬하는 방식 */
+  /* 조건: flex-wrap: wrap; 상태에서 item이 2줄 이상일 때 교차축 방향 설정 */
+  /* - align-content: stretch; -> 교차축 방향으로 모두 차지하기 위해 늘어남
+  - align-content: flex-start; -> 교차축 방향으로 시작점으로 정렬
+  - align-content: flex-end; -> 교차축 방향으로 끝접으로 정렬
+  - align-content: center; -> 교차축 방향으로 중앙 정렬 */
+  width: 350px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.item1 {
+  background-color: rgb(248, 164, 164);
+}
+.item2 {
+  background-color: rgb(236, 134, 134);
+}
+.item3 {
+  background-color: rgb(234, 102, 102);
+}
+.item4 {
+  background-color: rgb(239, 82, 82);
+}
+.item5 {
+  background-color: rgb(222, 30, 30);
+}
