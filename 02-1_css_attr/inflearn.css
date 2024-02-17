@@ -1,0 +1,89 @@
+img {
+  width: 10vw;
+}
+
+* {
+  /* 태그에 기본적으로 적용되어 있는 margin,padding 없애기 */
+  /* border-box 안주면 검색창 이상해짐 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 18px 200px;
+  box-shadow: 1px 0 7px rgba(163, 163, 163, 0.733);
+}
+
+header .inner .menu-right .header__search i {
+  /* 돋보기 input 안으로 이동시키기*/
+  /* 축으로 이동시킴 */
+  transform: translateX(-200%) translateY(7%);
+}
+
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  list-style: none;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-right {
+  display: flex;
+}
+
+.menu-left {
+  display: flex;
+}
+
+input {
+  width: 40vw;
+  padding: 13px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #f6f6f6;
+}
+
+input:hover:not(input:focus) {
+  border: 1px solid rgb(201, 201, 201);
+}
+
+/* btn */
+
+.btn {
+  cursor: pointer;
+  color: #363636;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 7px 11px;
+  border: 1px solid rgb(178, 178, 178);
+  border-radius: 5px;
+}
+
+.btn:last-child {
+  color: white;
+  background-color: #ff7867;
+}
