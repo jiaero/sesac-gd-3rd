@@ -26,11 +26,15 @@ a {
   color: #363636;
 }
 
+img {
+  width: 90px;
+}
+
 .logo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .menu {
@@ -43,6 +47,10 @@ a {
 
 .menu li {
   padding: 10px;
+}
+
+.menu li a:hover {
+  color: rgb(138, 187, 138);
 }
 
 .inner {
@@ -62,12 +70,19 @@ input {
   width: 40vw;
   padding: 13px 0;
   border-radius: 10px;
-  border: none;
+  border: 2px solid white;
   background-color: #f6f6f6;
 }
 
 input:hover:not(input:focus) {
-  border: 1px solid rgb(201, 201, 201);
+  border: 2px solid rgb(235, 235, 235);
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid rgb(138, 187, 138);
+  outline: none;
+  padding-left: 10px;
 }
 
 /* btn */
@@ -78,7 +93,7 @@ input:hover:not(input:focus) {
   margin-right: 10px;
   display: flex;
   align-items: center;
-  padding: 7px 11px;
+  padding: 0 12px;
   border: 1px solid rgb(178, 178, 178);
   border-radius: 5px;
 }
