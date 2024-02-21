@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediaquary prac2</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      @media screen and (min-width: 700px) {
+        .box {
+          width: 100px;
+          height: 100px;
+          border-radius: 10px;
+          background-color: black;
+          display: inline-block;
+          margin: 20px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .box {
+          width: 100px;
+          height: 100px;
+          border-radius: 10px;
+          background-color: skyblue;
+          margin: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>
