@@ -87,7 +87,7 @@
   flex-wrap: wrap;
 }
 
-.item {
+.container .item {
   width: 100px;
   height: 100px;
   font-size: 30px;
@@ -95,18 +95,54 @@
   line-height: 100px;
 }
 
-.item1 {
+.container .item1 {
   background-color: rgb(248, 164, 164);
 }
-.item2 {
+.container .item2 {
   background-color: rgb(236, 134, 134);
 }
-.item3 {
+.container .item3 {
   background-color: rgb(234, 102, 102);
 }
-.item4 {
+.container .item4 {
   background-color: rgb(239, 82, 82);
 }
-.item5 {
+.container .item5 {
   background-color: rgb(222, 30, 30);
+}
+
+.container2 {
+  background-color: #dfdfdf;
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.container2 .item {
+  /* width: 50px; */
+  height: 50px;
+}
+
+.container2 .item1 {
+  background-color: lightcoral;
+  order: 5;
+}
+
+.container2 .item2 {
+  background-color: lightblue;
+  align-self: flex-start;
+}
+
+.container2 .item3 {
+  background-color: lightgreen;
+  flex-basis: 100px;
+}
+
+.container2 .item4 {
+  background-color: lightsalmon;
+}
+
+.container2 .item5 {
+  background-color: lightgray;
+  order: 1;
 }
