@@ -27,8 +27,17 @@ header .inner .logo {
   line-height: 100px;
   position: absolute;
   /* i는 font-size로 크기 조정 */
-  font-size: 50px;
+  font-size: 40px;
   color: aliceblue;
+}
+
+.menu {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  line-height: 100px;
 }
 
 .small-menu,
@@ -37,9 +46,35 @@ header .inner .logo {
 }
 
 @media screen and (max-width: 768px) {
-  .small-menu,
-  .menu-bar {
+  .small-menu {
     display: block;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(240, 251, 255);
+  }
+
+  .small-menu li {
+    padding: 20px 0;
+  }
+
+  .small-menu li:hover {
+    font-weight: 700;
+    background-color: rgb(140, 226, 255);
+  }
+
+  .inner {
+    /* text-align: center; */
+  }
+
+  .logo {
+    left: calc(50% - 25px);
+  }
+
+  .menu-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 25px;
+    line-height: 100px;
   }
 
   .menu {
