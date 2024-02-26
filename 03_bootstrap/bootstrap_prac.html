@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Purr</title>
+    <title>Neko Atsume</title>
 
     <!-- favicon -->
     <link rel="icon" href="./img/cat_face1.jpeg" />
@@ -35,10 +35,12 @@
         font-optical-sizing: auto;
         font-style: normal;
         font-size: 17px;
+        background-color: #f7f5ee;
       }
 
       .navbar {
         background-color: rgba(255, 255, 255, 0.294);
+        text-transform: uppercase;
       }
 
       .nav-link {
@@ -52,6 +54,10 @@
       .form-control:focus {
         border: 1px solid white;
         box-shadow: none;
+      }
+
+      footer {
+        text-transform: uppercase;
       }
     </style>
   </head>
@@ -71,23 +77,19 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-2">
+        <div
+          class="collapse navbar-collapse flex-row-reverse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-2">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cats">Cats</a>
+              <a class="nav-link" href="#about">Cat</a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://hitpoint.official.ec/"
-                target="_blank"
-                >Goods</a
-              >
-            </li>
-            <li class="nav-item dropdown">
+            <!-- drop-down -->
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -95,7 +97,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Yard
+                Cats
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -105,13 +107,19 @@
                 <li><a class="dropdown-item" href="#">Winter ❊</a></li>
                 <li><a class="dropdown-item" href="#">summer ☼</a></li>
               </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#cats">Goods</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cats">News</a>
             </li>
 
             <!-- <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li> -->
           </ul>
-          <form class="d-flex" role="search">
+          <!-- <form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
@@ -122,7 +130,7 @@
               Meow
             </button>
             <img src="./img/menu.png" alt="" />
-          </form>
+          </form> -->
         </div>
       </div>
     </nav>
@@ -357,7 +365,54 @@
     <!-- cat -->
     <div id="cats" class="d-flex justify-content-center">
       <div style="text-align: center; margin: 170px 0">
-        <p style="font-size: 40px">Cats</p>
+        <p style="font-size: 40px">CATS</p>
+        <p style="text-align: center; margin-top: 25px; font-size: 26px">
+          <span style="font-size: 28px">Neko Atsume</span> 의 친구들을
+          소개합니다
+        </p>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center" style="margin-bottom: 200px">
+      <div class="card" style="width: 18rem">
+        <img src="./img/cat_1.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./img/cat_1.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./img/cat_1.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div id="cats" class="d-flex justify-content-center">
+      <div style="text-align: center; margin: 170px 0">
+        <p style="font-size: 40px">NEWS</p>
         <p style="text-align: center; margin-top: 25px; font-size: 26px">
           <span style="font-size: 28px">Neko Atsume</span> 의 친구들을
           소개합니다
@@ -464,9 +519,9 @@
                   id="newsletter1"
                   type="text"
                   class="form-control"
-                  placeholder="Email address"
+                  style="height: 54px; border-radius: 30px; padding-left: 25px"
+                  placeholder="WHAT'S YOUR EMAIL ?"
                 />
-                <button class="btn btn-success" type="button">🐈</button>
               </div>
             </form>
           </div>
