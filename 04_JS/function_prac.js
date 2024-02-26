@@ -13,9 +13,10 @@ function square(num3) {
 
 console.log(square(4));
 
-
 const square = function (num) {
   console.log(num ** 2);
 };
 
 square(4);
+
+
