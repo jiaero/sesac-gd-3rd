@@ -84,25 +84,41 @@
     </p>
 
     <script>
-      function whatDay(day) {
-        if (day === 1) {
-          return "월";
-        } else if (day === 2) {
-          return "화";
-        } else if (day === 3) {
-          return "수";
-        } else if (day === 4) {
-          return "목";
-        } else if (day === 5) {
-          return "금";
-        } else if (day === 6) {
-          return "토";
-        } else if (day === 7) {
-          return "일";
-        } else {
-          return null;
-        }
-      }
+      // function whatDay(day) {
+      //   if (day === 1) {
+      //     return "월";
+      //   } else if (day === 2) {
+      //     return "화";
+      //   } else if (day === 3) {
+      //     return "수";
+      //   } else if (day === 4) {
+      //     return "목";
+      //   } else if (day === 5) {
+      //     return "금";
+      //   } else if (day === 6) {
+      //     return "토";
+      //   } else if (day === 7) {
+      //     return "일";
+      //   } else {
+      //     return null;
+      //   }
+      // }
+
+      function whatDay(num) {
+      // TODO: 조건을 만족하는 whatDay 함수를 완성해주세요.
+      let days = ['월', '화', '수', '목', '금', '토', '일'];
+      let result = null;
+      if (Number(num) >= 1 && Number(num) <= 7 && Number(num) === num)
+        result = days[num - 1];
+
+      return result;
+    }
+
+    console.log(whatDay(3));
+    console.log(whatDay(7));
+    console.log(whatDay(0));
+    console.log(whatDay(10));
+    console.log(whatDay('5'));
     </script>
   </body>
 </html>

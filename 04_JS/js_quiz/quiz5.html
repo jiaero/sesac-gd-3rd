@@ -82,6 +82,19 @@
           return '4의 배수가 아님';
         }
       }
+
+      function diceNumber(first, second) {
+        if(typeof first === 'number' && typeof second === 'number') {
+          const result = first + second;
+          if (result % 4 === 0) {
+            console.log('4의 배수');
+          } else {
+            console.log('4의 배수가 아님')
+          }
+        } else {
+          console.log('Not a Number')
+        }
+      }
     </script>
   </body>
 </html>
