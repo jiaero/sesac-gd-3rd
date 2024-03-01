@@ -18,5 +18,3 @@ const square = function (num) {
 };
 
 square(4);
-
-
