@@ -116,17 +116,29 @@
         href="https://velog.io/@judylia/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-9-while-%EB%B0%98%EB%B3%B5%EB%AC%B8-for-%EB%B0%98%EB%B3%B5%EB%AC%B8-break-continue-%EC%A4%91%EC%B2%A9-%EB%B0%98%EB%B3%B5%EB%AC%B8#3-break"
         >무한루프 탈출하기</a
       >
-      <br /><br />
-      (힌트)
-      <a target="_blank" href="https://developer.mozilla.org/ko/docs/Web/API/Window/prompt#%EB%B0%98%ED%99%98_%EA%B0%92"
-        >MDN 사이트 이동 (prompt 함수 반환값)</a
-      >
-    </p>
 
     <script>
       function startGame() {
         console.log('버튼을 클릭하셨군요! 게임을 시작합니다.');
         // TODO: [게임 시작하기] 버튼을 누르면 startGame() 함수가 실행되도록 설정해두었습니다. 함수 내부 코드를 채워주세요
+        let answer = Math.floor(Math.random() * 10 + 1); // 1 ~ 10 사이의 난수 생성
+
+        while (true) {
+          let guessValue = prompt('Up and Down 게임을 시작합니다 !');
+          if (guessValue === '그만' || guessValue === 'q') {
+            alert('게임을 포기하셨습니다')
+            break;
+          } else if (guessValue == answer ) {
+            alert(`${answer}!! 정답입니다!!`);
+            break;
+          } else if (guessValue > answer) {
+            alert('Down !');
+          } else if (guessValue < answer) {
+            alert('UP !');
+          } else {
+            alert('1 ~ 10 사이의 숫자만 입력해주세요.');
+          }
+        }
       }
     </script>
   </body>
