@@ -225,3 +225,38 @@ let mapArr = nums.map(function (n) {
   return n * 100;
 });
 console.log(mapArr); // [100, 200, 300, 400, 500]
+
+// 배열에서의 반복 실습
+// 1 ~ 100 for문을 사용해서 만들기
+let numArr = [];
+for (let i = 0; i <= 100; i++) {
+  numArr.push(i);
+}
+
+// 합 구하기
+// 1. for문
+let sum1 = 0;
+for (let i = 0; i < numArr.length; i++) {
+  sum1 += numArr[i];
+}
+console.log(sum1);
+
+// 2. for of문
+let sum2 = 0;
+// numArr 배열에 있는 모든 요소를 num이라고 지칭하면서 반복한다.
+for (let num of numArr) {
+  sum2 += num;
+}
+console.log(sum2);
+
+// 3. forEach문
+let sum3 = 0;
+numArr.forEach(function (num) {
+  sum3 += num;
+});
+console.log(sum3);
+
+// 화살표 함수
+// numArr.forEach((num) => {
+//   sum3 += num;
+// });
