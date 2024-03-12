@@ -1,0 +1,87 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습1. 이미지 바꾸기</title>
+
+    <!-- TODO: jQuery CDN 추가 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      .btns {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>what kind of bread ?</h2>
+
+      <div class="btns">
+        <button class="btn" id="sandwich_bread">식빵</button>
+        <button class="btn" id="croissant">크루아상</button>
+        <button class="btn" id="cream_bun">크림빵</button>
+        <button class="btn" id="baguette">바게트</button>
+      </div>
+      <img class="bread" src="./image/q.jpg" alt="" />
+      <br />
+      <div id="text"></div>
+    </div>
+    <script>
+      // TODO: 조건을 만족하는 jquery 코드 작성
+      // $("#apple").on({
+      //   click: function () {
+      //     $(".fruit").attr("src", "./image/apple.jpg");
+      //   },
+      // });
+      // $("#bananas").on({
+      //   click: function () {
+      //     $(".fruit").attr("src", "./image/bananas.jpg");
+      //   },
+      // });
+      // $("#grapes").on({
+      //   click: function () {
+      //     $(".fruit").attr("src", "./image/grapes.jpg");
+      //   },
+      // });
+      // $("#peaches").on({
+      //   click: function () {
+      //     $(".fruit").attr("src", "./image/peaches.jpg");
+      //   },
+      // });
+
+      $(".btn").mouseover((e) => {
+        // 클릭된 btn의 id값 가져와 imgName이라는 변수에 저장
+        const imgName = $(e.target).attr("id");
+        // console.log(imgName); // apple, bananas, grapes, peaches 중 클릭한 btn의 아이디 값으로 저장
+
+        $(".bread").attr("src", `./image/${imgName}.jpg`);
+        if (imgName === "sandwich_bread") {
+          $("#text").text("이것은 식빵입니다");
+        } else if (imgName === "croissant") {
+          $("#text").text("이것은 크루아상입니다");
+        } else if (imgName === "cream_bun") {
+          $("#text").text("이것은 크림빵입니다");
+        } else {
+          $("#text").text("이것은 바게트입니다");
+        }
+      });
+    </script>
+  </body>
+</html>
