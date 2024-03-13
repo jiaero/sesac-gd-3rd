@@ -15,23 +15,64 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      @font-face {
+        font-family: "EF_watermelonSalad";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        margin-top: 9vh;
+      }
+
       .container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 36px;
       }
+
+      p {
+        font-family: "EF_watermelonSalad";
+      }
+
       img {
-        width: 300px;
-        height: 300px;
+        height: 280px;
       }
       .btns {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
+      }
+
+      .btn {
+        margin: 20px 20px 30px;
+        padding: 16px 22px;
+        font-size: 20px;
+        border: none;
+        border-bottom: 2px;
+        border-radius: 30px;
+        background-color: #eaeaea;
+      }
+
+      .btn:hover,
+      .btn:focus {
+        background-color: black;
+        color: white;
+      }
+
+      #text {
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 40px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h2>what kind of bread ?</h2>
+      <p>어떤 빵을 좋아하시나요 ?</p>
 
       <div class="btns">
         <button class="btn" id="sandwich_bread">식빵</button>
@@ -66,20 +107,28 @@
       //   },
       // });
 
-      $(".btn").mouseover((e) => {
+      $(".btn").click((e) => {
         // 클릭된 btn의 id값 가져와 imgName이라는 변수에 저장
         const imgName = $(e.target).attr("id");
         // console.log(imgName); // apple, bananas, grapes, peaches 중 클릭한 btn의 아이디 값으로 저장
 
         $(".bread").attr("src", `./image/${imgName}.jpg`);
         if (imgName === "sandwich_bread") {
-          $("#text").text("이것은 식빵입니다");
+          $("#text").html(
+            `<span>식빵은 밀가루, 물, 소금 등을 사용하여 만든 부드러운 빵으로, <br> 토스트로 구워서 먹거나 샌드위치 재료로 사용되기도 합니다. <br>버터나 잼을 곁들여 먹으면 더욱 맛있습니다.</span>`
+          );
         } else if (imgName === "croissant") {
-          $("#text").text("이것은 크루아상입니다");
+          $("#text").html(
+            `<span>크루아상은 프랑스의 전통적인 빵 중 하나로, <br>반죽을 여러 겹으로 층층이 쌓은 후 버터를 넣고 접어서 만듭니다.<br>겉은 바삭하고 속은 부드럽고 촉촉한 식감입니다.</span>`
+          );
         } else if (imgName === "cream_bun") {
-          $("#text").text("이것은 크림빵입니다");
+          $("#text").html(
+            `<span>크림빵은 달콤한 크림이 채워진 빵으로, 주로 부드럽고<br>단맛이 나는 빵 안에 신선한 크림 또는 커스터드 크림이 들어가 있습니다.<br>다양한 추가 재료가 들어갈 수 있어 여러가지 맛을 즐길 수 있습니다.</span>`
+          );
         } else {
-          $("#text").text("이것은 바게트입니다");
+          $("#text").html(
+            `<span>바게트는 프랑스의 전통적인 빵으로 길고 얇은 형태를<br>가지고 있습니다. 바삭하게 구워진 껍질과 속은 부드럽고 구멍이 나있는<br>것이 특징입니다. 샌드위치의 재료로도 자주 사용됩니다.</span>`
+          );
         }
       });
     </script>
