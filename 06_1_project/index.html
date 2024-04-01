@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2차-팀 프로젝트</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "Cafe24Ssurround";
+      src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+        format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* html{cursor: url('./img/cursor.png'), auto} */
+    body {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #9fdbff;
+      /* cursor: url("./img/cursor1.png"), auto; */
+    }
+
+    .container {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+    }
+    .grass {
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .grass img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+
+    .wolf {
+      width: 50%;
+      position: absolute;
+      left: 12vw;
+      bottom: 0;
+      /* animation: fadein 2.5s; */
+      animation: fadeInLeft 1s;
+    }
+    .wolf img {
+      width: 36vw;
+    }
+
+    /* 페이드 인 */
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* 왼쪽에서 오른쪽으로 */
+    @keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translateZ(0);
+      }
+    }
+
+    .house1 img:hover {
+      cursor: url("./img/cursor2.png"), auto;
+    }
+
+    .house1 {
+      right: 5vw;
+      width: 50%;
+      position: absolute;
+      bottom: 5vh;
+      cursor: pointer;
+    }
+
+    .house1 img {
+      width: 38vw;
+    }
+
+    .vibration {
+      animation: vibration 0.1s infinite;
+    }
+
+    @keyframes vibration {
+      from {
+        transform: rotate(1deg);
+      }
+      to {
+        transform: rotate(-1deg);
+      }
+    }
+
+    /* .croud1 {
+      animation: motion 1s linear 0s infinite alternate;
+      width: 16vw;
+      padding-right: 12vw;
+      opacity: 0.9;
+    }
+
+    .wrap {
+      position: absolute;
+      left: 20vw;
+      top: 3vh;
+      z-index: -1;
+    } */
+
+    @keyframes motion {
+      0% {
+        margin-top: 0px;
+      }
+      100% {
+        margin-top: 10px;
+      }
+    }
+
+    p {
+      font-size: 38px;
+      text-align: center;
+      padding-top: 160px;
+      font-family: "Cafe24Ssurround";
+      line-height: 50px;
+    }
+
+    header {
+      background-color: white;
+      opacity: 0.3;
+      width: 100%;
+      height: 70px;
+      position: absolute;
+    }
+  </style>
+
+  <body>
+    <header></header>
+    <div class="container">
+      <p>
+        " 첫째 돼지 집에 배고픈 늑대가 다가와서<br />
+        문을 똑똑 두드리며 말했어요. "
+      </p>
+      <div class="grass">
+        <img src="./img/잔디.png" alt="" />
+      </div>
+      <div class="wolf">
+        <img src="./img/늑대.png" alt="" />
+      </div>
+      <div class="house1" onclick="vibration(this)">
+        <img src="./img/볏짚집.png" alt="" />
+      </div>
+      <!-- <div class="wrap">
+        <img
+          src="./img/croud1.jpeg"
+          class="croud1"
+          style="width: 11vw; opacity: 0.7;"
+        />
+        <img src="./img/croud1.jpeg" class="croud1" />
+        <img
+          src="./img/croud1.jpeg"
+          class="croud1"
+          style="width: 13vw; opacity: 0.8"
+        />
+      </div> -->
+    </div>
+
+    <script>
+      const vibration = (target) => {
+        target.classList.add("vibration");
+
+        // 진동효과 없애기
+        setTimeout(function () {
+          target.classList.remove("vibration");
+        }, 400);
+      };
+    </script>
+  </body>
+</html>
