@@ -2,7 +2,9 @@ import "./App.css";
 import FuncProps from "./component/FuncProps";
 import ClassProps from "./component/ClassProps";
 import PropsPrac from "./component/PropsPrac";
-import ProductList from "./component/ProductList";
+import ProductItem from "./component/ProductItem";
+import BestSeller from "./component/BestSeller";
+import ProductContainer from "./component/ProductContainer";
 
 function App() {
   const sayHi = () => {
@@ -118,9 +120,14 @@ function App() {
 
       {/* // --------------- */}
       {/* 연습 */}
-      {products.map((prod) => (
+      {/* {products.map((prod) => (
         <ProductList prodData={prod} key={prod.id} />
-      ))}
+      ))} */}
+
+      {/* 연습 develop */}
+      {/* <ProductContainer products={products} /> */}
+
+      <BestSeller title="눈물 참는 법" author="김주영" price="13,500" type="자기 계발서" />
     </div>
   );
 }
