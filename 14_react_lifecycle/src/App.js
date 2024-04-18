@@ -1,7 +1,7 @@
-import ClassLifeCycle from "./component/ClassLifeCycle";
-import FuncLifeCycle from "./component/FuncLifeCycle";
-import PracContainer from "./component/PracContainer";
-import PracFakePost from "./component/PracFakePost";
+import ClassLifeCycle from "./components/ClassLifeCycle";
+import FuncLifeCycle from "./components/FuncLifeCycle";
+import PracContainer from "./components/PracContainer";
+import PracFakePost from "./components/PracFakePost";
 
 function App() {
   return (

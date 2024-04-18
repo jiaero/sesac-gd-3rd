@@ -1,10 +1,10 @@
 import "./App.css";
-import FuncProps from "./component/FuncProps";
-import ClassProps from "./component/ClassProps";
-import PropsPrac from "./component/PropsPrac";
-import ProductItem from "./component/ProductItem";
-import BestSeller from "./component/BestSeller";
-import ProductContainer from "./component/ProductContainer";
+import FuncProps from "./components/FuncProps";
+import ClassProps from "./components/ClassProps";
+import PropsPrac from "./components/PropsPrac";
+import ProductItem from "./components/ProductItem";
+import BestSeller from "./components/BestSeller";
+import ProductContainer from "./components/ProductContainer";
 
 function App() {
   const sayHi = () => {

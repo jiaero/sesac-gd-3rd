@@ -1,7 +1,7 @@
 import './App.css';
-import ClassComponent from './component/ClassComponent';
-import FunctionComponents from './component/FunctionComponent';
-import Prac from './component/Prac';
+import ClassComponent from './components/ClassComponent';
+import FunctionComponents from './components/FunctionComponent';
+import Prac from './components/Prac';
 
 function App() {
   return ( 
