@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  background-color: rgb(241, 241, 241);
+  font-family: "LINESeedKR-Bd";
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.headerStyle {
+  border: 2px solid rgb(223, 223, 223);
+  border-radius: 50px;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  margin: 0 14px;
+  padding: 16px 30px; /* 패딩 */
+  font-size: 24px; /* 글자 크기 */
+  text-align: center; /* 텍스트 정렬 */
+}
