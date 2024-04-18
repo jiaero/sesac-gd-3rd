@@ -1,8 +1,8 @@
-import UseMemo from "./component/UseMemo";
-import UseCallback1 from "./component/UseCallback1";
-import UseCallback2 from "./component/UseCallback2";
-import UseReducer from "./component/UseReducer";
-import CustomHook from "./component/CustomHook";
+import UseMemo from "./components/UseMemo";
+import UseCallback1 from "./components/UseCallback1";
+import UseCallback2 from "./components/UseCallback2";
+import UseReducer from "./components/UseReducer";
+import CustomHook from "./components/CustomHook";
 
 function App() {
   return (
