@@ -1,0 +1,14 @@
+.container {
+  border: 5px solid salmon;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.first {
+  background-color: cadetblue;
+}
+
+.second {
+  /* 32px */
+  font-size: 2rem;
+}
