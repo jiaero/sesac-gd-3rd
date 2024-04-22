@@ -1,0 +1,35 @@
+// color 변수
+$color-main-util: rgb(255, 168, 183);
+$color-main-light: rgb(255, 230, 234);
+$color-light-gray: #cdcdcd;
+$color-gray: #8b8b8b;
+$color-dark-gray: #3d3d3d;
+
+// break point
+$break-point-mobile: 700px;
+
+// 사용
+// @media screen and (max-width: $break-point-mobile) {
+//     // 스타일링 작성
+// }
+
+// mixin
+@mixin btn($bgColor) {
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: $bgColor;
+    @if $bgColor == $color-main-util {
+        border: 1px solid $color-main-light;
+        color: #fff;
+    } @else if $bgColor == $color-main-light {
+        border: $color-main-util;
+    } @else if $bgColor == $color-light-gray {
+        border: 1px solid $color-gray;
+        color: $color-gray;
+    } @else {
+        border: 1px solid #000;
+    }
+}
+
+

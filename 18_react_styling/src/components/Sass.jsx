@@ -29,6 +29,9 @@ export default function Sass() {
       </div>
 
       <div className="sass-use-if">use if문</div>
+
+      <div className="sass-util">utils import</div>
+      <div className="sass-util-btn">utils btn</div>
     </>
   );
 }
