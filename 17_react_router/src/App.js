@@ -1,8 +1,8 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import Test from './components/Test';
-import Board from './pages/Board';
-import Profile from './pages/Profile';
-import BoardDetail from './pages/BoardDetail';
+import { Routes, Route } from 'react-router-dom';
+// import Test from './components/Test';
+// import Board from './pages/Board';
+// import Profile from './pages/Profile';
+// import BoardDetail from './pages/BoardDetail';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Header from './components/Header';
